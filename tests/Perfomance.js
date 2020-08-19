@@ -5,7 +5,9 @@ describe("Test for falkiness", async () => {
     const browser = await puppeteer.launch();
     const page = await browser.newPage();
 
-    await page.goto("https://www.amazon.com", { waitUntil: "networkidle0" });
+    await page.goto("https://www.thoughtworks.com", {
+      waitUntil: "networkidle0",
+    });
 
     const metrics = await page.metrics();
 
