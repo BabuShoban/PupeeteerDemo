@@ -19,5 +19,7 @@ describe("Geolocation", async () => {
 
     await page.goto("https://locations.dennys.com/search.html");
     await page.click(".Locator-buttons button");
+
+    // await browser.close();
   });
 });

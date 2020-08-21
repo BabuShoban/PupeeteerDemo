@@ -1,8 +1,8 @@
 const puppeteer = require("puppeteer");
 
-describe("Test for Page Tracinng", async () => {
+describe("Page Tracing", async () => {
   it("Page Tracing for Thoughtworks site", async () => {
-    const browser = await puppeteer.launch({ headless: false, slowMo: 500 });
+    const browser = await puppeteer.launch({ headless: true, slowMo: 500 });
     const page = await browser.newPage();
 
     await page.tracing.start({ path: "trace.json" });

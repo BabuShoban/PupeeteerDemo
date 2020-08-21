@@ -1,7 +1,7 @@
 const puppeteer = require("puppeteer");
 
-describe("Test for falkiness", async () => {
-  it("Falkiness test", async () => {
+describe("Demo for falkiness", async () => {
+  it("Falkiness demo", async () => {
     const browser = await puppeteer.launch({ headless: false });
     const page = await browser.newPage();
 

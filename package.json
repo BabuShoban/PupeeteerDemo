@@ -1,7 +1,7 @@
 {
-  "name": "PPTR_demo",
+  "name": "puppeteer_demo",
   "version": "1.0.0",
-  "description": "",
+  "private": "true",
   "main": "index.js",
   "scripts": {
     "test": "mocha --timeout 0 tests/"
@@ -10,6 +10,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "chai": "^4.2.0",
+    "chalk": "^4.1.0",
+    "lighthouse": "^6.2.0",
     "mocha": "^8.1.1",
     "puppeteer": "^5.2.1"
   }
