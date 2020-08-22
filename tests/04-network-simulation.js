@@ -8,11 +8,11 @@ describe("Network Simulation", () => {
     const slow3G = {
       // Network connectivity is absent
       offline: false,
-      // Download speed (bytes/s)
+      // Download speed (bytes/s) 50 MB
       downloadThroughput: ((500 * 1024) / 8) * 0.8,
-      // Upload speed (bytes/s)
+      // Upload speed (bytes/s) 50 MB
       uploadThroughput: ((500 * 1024) / 8) * 0.8,
-      // Latency (ms)
+      // Latency 2000 (ms)
       latency: 400 * 5,
     };
     await client.send("Network.enable");

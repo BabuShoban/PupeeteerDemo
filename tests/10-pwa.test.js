@@ -21,7 +21,7 @@ describe("PWA tests", () => {
   it("should register service worker", async () => {
     const browser = await puppeteer.launch({ headless: false });
     const page = await browser.newPage();
-    await page.goto("https://v8.dev");
+    await page.goto("https://pptr.dev");
     await page.evaluate("navigator.serviceWorker.ready");
     const allRequests = new Map();
     page.on("request", (req) => {
