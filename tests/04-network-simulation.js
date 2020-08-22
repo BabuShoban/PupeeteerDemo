@@ -43,6 +43,6 @@ describe("Network Simulation", () => {
 
     await page.setOfflineMode(true);
 
-    //await browser.close()
+    await browser.close();
   });
 });
