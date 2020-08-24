@@ -4,7 +4,6 @@ describe("Mocking/Stubbing", async () => {
   it("Intercept tw image test", async () => {
     const browser = await puppeteer.launch({ headless: false, slowMo: 200 });
     const page = await browser.newPage();
-
     await page.setRequestInterception(true);
 
     // https://www.google.co.in/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png
